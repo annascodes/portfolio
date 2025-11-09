@@ -26,9 +26,12 @@ export default function RootLayout({
   return (
     <html  data-theme="business" lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
+     <div className="z-50 fixed top-0 w-full">
+         <Navbar/>
+     </div>
+
         {children}
       </body>
     </html>
