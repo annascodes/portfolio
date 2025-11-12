@@ -2,6 +2,7 @@ import React from 'react'
 import NavLinks from './NavLinks'
 import { FiSliders } from "react-icons/fi";
 import Link from 'next/link';
+import ContactFormModal from '../ContactFormModal';
 
 const Navbar = () => {
     return (
@@ -32,7 +33,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                   <ContactFormModal onlyIcon={true} />
                 </div>
             </div>
 

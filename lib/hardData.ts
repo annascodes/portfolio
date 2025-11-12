@@ -18,10 +18,10 @@ export const skills: string[] = [
     ]
 
 export const projects = [
-    'Blogging apps',
-    'Social media apps like instagram, threads etc.',
-    'Management apps like HRM, Event Manager, Project Manager',
     'RBAC (Role Base Access Control)',
+    'Management apps like HRM, Event Manager, Project Manager',
+    'Social media apps like instagram, threads etc.',
+    'Blogging apps',
 
     
 ]

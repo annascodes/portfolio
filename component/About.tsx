@@ -1,6 +1,7 @@
 import React from 'react'
 import BasicIcons from './BasicIcons';
 import { projects, skills } from '@/lib/hardData';
+import TechnicalSkillsModal from './TechnicalSkillsModal';
 
 const About = () => {
     
@@ -29,13 +30,13 @@ const About = () => {
                         <div className='flex items-center gap-3'>
                             <BasicIcons label='filledDot' className='text-xl text-yellow-300' />
                             <div className='flex flex-wrap gap-2 items-center'>
-                                <h1>Build severl projects in <span className='text-yellow-300 font-bold '>MERN</span> stack </h1>
+                                <h1>Built severl projects in <span className='text-yellow-300 font-bold '>MERN</span> stack </h1>
 
                             </div>
                         </div>
                         <div className='flex items-center gap-3'>
-                            <BasicIcons label='filledDot' className='text-xl text-yellow-300' />
-                            <h1>Build couple of web apps using  <span className='font-bold text-yellow-300'> Nextjs</span> too, all are live.</h1>
+                            <BasicIcons label='filledDot' className='text-xl text-yellow-300 ' />
+                            <h1>Built couple of web apps using  <span className='font-bold text-yellow-300'> Nextjs</span> too, all are live.</h1>
                         </div>
                         <div className='flex items-center gap-3'>
                             <BasicIcons label='filledDot' className='text-xl text-yellow-300' />
@@ -50,7 +51,7 @@ const About = () => {
 
                             {projects.map(p => {
                                 return (
-                                    <div key={p} className="badge badge-outline badge-secondary tracking-widest">{p}</div>
+                                    <div key={p} className=""> - {p}</div>
                                 )
                             })}
 
@@ -73,10 +74,9 @@ const About = () => {
 
 
                     </div>
-                    {/* <div className='flex items-center gap-3 my-2'>
-                        <button className='btn  tracking-widest btn-outline text-xs'> Technical Skills</button>
-                        <button className='btn  tracking-widest btn-outline text-xs'> Projects</button>
-                    </div> */}
+                    <div className='flex items-center gap-3 my-2'>
+                        <TechnicalSkillsModal/>
+                    </div>
                 </div>
             </div>
 

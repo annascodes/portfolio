@@ -1,4 +1,6 @@
 import About from "@/component/About";
+import Contact from "@/component/Contact";
+import ContactFormModal from "@/component/ContactFormModal";
 import Hero from "@/component/Hero";
 import LiveProjects from "@/component/LiveProjects";
 import RecentProjects from "@/component/RecentProjects";
@@ -11,16 +13,24 @@ export default function Home() {
         <Hero />
       </div>
 
-      <div id="about" className="mt-15 md:mt-0">
+      <div id="about" className="mt-20 md:mt-0">
         <About />
       </div>
 
       <div id="liveProjects" className=" pt-10">
         <LiveProjects />
       </div>
-
+{/* 
       <div id="work">
         <Work />
+      </div> */}
+
+      <div id="contact">
+        <Contact />
+      </div>
+
+      <div className="h-svh flex items-center justify-center">
+        <ContactFormModal />
       </div>
 
     </div>

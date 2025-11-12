@@ -15,6 +15,14 @@ import { GoDotFill } from "react-icons/go";
 import { GoDot } from "react-icons/go";
 import { IoMdCheckmark } from "react-icons/io";
 import { GoArrowRight } from "react-icons/go";
+import { LuMapPin } from "react-icons/lu";
+import { LuPhone } from "react-icons/lu";
+import { LuAtSign } from "react-icons/lu";
+import { MdOutlineWavingHand } from "react-icons/md";
+import { MdErrorOutline } from "react-icons/md";
+
+
+
 
  export const IconsAndLabels = {
     school: LuSchool,
@@ -33,6 +41,13 @@ import { GoArrowRight } from "react-icons/go";
     filledDot: GoDotFill,
     checkMark: IoMdCheckmark,
     arrowRight: GoArrowRight,
+    location:LuMapPin,
+    phone: LuPhone,
+    email:LuAtSign,
+    hand: MdOutlineWavingHand,
+    exclamation: MdErrorOutline,
+
+
     
 }
 type PropType = {

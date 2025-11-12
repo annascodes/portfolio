@@ -18,13 +18,13 @@ const NavLinks = () => {
                     <span className='block md:hidden'>About</span>
                 </a>
             </li>
-            <li className='md:mx-5'>
+            {/* <li className='md:mx-5'>
                 <a href='#work' className='flex items-center gap-2'>
                     <BasicIcons label='work' className='text-2xl' />
                     <span className='block md:hidden'>Work</span>
                 </a>
 
-            </li>
+            </li> */}
 
             <li className='md:mx-5'>
                 <a href='#contact' className='flex items-center gap-2'>

@@ -1,17 +1,37 @@
+
+'use client'
+import { skills } from '@/lib/hardData';
 import React from 'react'
+import BasicIcons from './BasicIcons';
 
 const TechnicalSkillsModal = () => {
+    const modalId = `technicalSkills`
     return (
         <div>
             {/* Open the modal using document.getElementById('ID').showModal() method */}
-            <button className="btn" onClick={() => {
-                const modal=  document.getElementById('my_modal_2') as HTMLDialogElement | null;
-                modal?.showModal()
-            }}>open modal</button>
-            <dialog id="my_modal_2" className="modal">
+            <button className='btn  tracking-widest btn-outline text-xs'
+                onClick={() => {
+                    const modal = document.getElementById(modalId) as HTMLDialogElement | null;
+                    modal?.showModal()
+                }}>Technical skills</button>
+            <dialog id={modalId} className="modal">
                 <div className="modal-box">
-                    <h3 className="font-bold text-lg">Hello!</h3>
-                    <p className="py-4">Press ESC key or click outside to close</p>
+                    <div>
+                        <div className='flex items-center gap-3'>
+                            <BasicIcons label='filledDot' className='text-xl text-yellow-300' />
+                            <h1>Technical skills:</h1>
+                        </div>
+                        <div className='flex items-center mt-1  gap-3 flex-wrap ml-10'>
+
+                            {skills.map(s => {
+                                return (
+                                    <div key={s} className="badge badge-outline badge-xl text-sm badge-secondary tracking-widest">{s}</div>
+                                )
+                            })}
+
+
+                        </div>
+                    </div>
                 </div>
                 <form method="dialog" className="modal-backdrop">
                     <button>close</button>
