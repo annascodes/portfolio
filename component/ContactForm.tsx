@@ -24,7 +24,7 @@ export default function ContactForm() {
       })
       if (res.ok) {
         setStatus(<div className="flex items-center gap-2"> <BasicIcons label="checkMark" /> Message sent! Thank you.</div>)
-        setName("")
+        // setName("")
         setMessage("")
       } else {
         const data = await res.json().catch(() => null)

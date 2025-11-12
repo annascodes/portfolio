@@ -35,7 +35,7 @@ const NavLinks = () => {
             <li className='md:mx-5 overflow-hidden '>
                 <a href='#liveProjects' className='flex items-center gap-2'>
                     <BasicIcons label='dot' className='text-2xl text-yellow-300 animate-ping' />
-                    <span className='block md:hidden'>Live</span>
+                    <span className='block md:hidden'>Live Projects</span>
                 </a>
             </li>
             {/* <li>
