@@ -39,7 +39,7 @@ const Contact = () => {
                     </div>
                     <h1 className='text-5xl mb-2 font-semibold   '>Contact</h1>
                 </div>
-                <div className='flex flex-col gap-3'>
+                <div className='flex flex-col gap-3 mt-5 md:mt-0'>
                     <div className='border-0 flex flex-col gap-3'>
                         <div className='flex items-center gap-3'>
                             <BasicIcons label={'location'} />
