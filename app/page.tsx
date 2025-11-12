@@ -9,25 +9,24 @@ import Work from "@/component/Work";
 export default function Home() {
   return (
     <div>
+
       <div id="home">
         <Hero />
       </div>
 
-      <div id="about" className="mt-20 md:mt-0">
-        <About />
-      </div>
+      <div id="about" className="mt-36 h-20 border-0"></div>
+      <About />
 
-      <div id="liveProjects" className=" pt-10">
-        <LiveProjects />
-      </div>
-{/* 
-      <div id="work">
-        <Work />
-      </div> */}
 
-      <div id="contact">
-        <Contact />
-      </div>
+      <div id="liveProjects" className="mt-36 h-20 border-0"></div>
+      <LiveProjects />
+
+
+
+      <div id="contact" className="mt-36 h-20 border-0"></div>
+      <Contact />
+
+
 
       <div className="h-svh flex items-center justify-center">
         <ContactFormModal />
