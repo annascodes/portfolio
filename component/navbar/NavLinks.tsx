@@ -38,6 +38,12 @@ const NavLinks = () => {
                     <span className='block md:hidden'>Live Projects</span>
                 </a>
             </li>
+            <li className='md:mx-5 overflow-hidden '>
+                <Link href='https://github.com/annascodes' target='_blank' className='flex items-center gap-2'>
+                    <BasicIcons label='github' className='text-2xl'  />
+                    <span className='block md:hidden'>Github</span>
+                </Link>
+            </li>
             {/* <li>
                 <details>
                     <summary>Parent</summary>
