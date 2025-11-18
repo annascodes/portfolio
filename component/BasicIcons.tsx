@@ -20,6 +20,7 @@ import { LuPhone } from "react-icons/lu";
 import { LuAtSign } from "react-icons/lu";
 import { MdOutlineWavingHand } from "react-icons/md";
 import { MdErrorOutline } from "react-icons/md";
+import { RiInstagramLine } from "react-icons/ri";
 
 
 
@@ -46,8 +47,9 @@ import { MdErrorOutline } from "react-icons/md";
     email:LuAtSign,
     hand: MdOutlineWavingHand,
     exclamation: MdErrorOutline,
+    insta: RiInstagramLine,
 
-
+    
     
 }
 type PropType = {

@@ -59,6 +59,11 @@ const Contact = () => {
                             <BasicIcons label={'github'} />
                             <Link href={'https://github.com/annascodes'} target='_blank' className='underline underline-offset-2 hover:text-blue-300 duration-300' >annascodes</Link>
                         </div>
+                        <div className='flex items-center gap-3'>
+                            <BasicIcons label={'insta'} className='text-2xl' />
+                            <Link href={' https://www.instagram.com/anas_mongol/'} target='_blank' className='underline underline-offset-2 hover:text-blue-300 duration-300' >Instagram</Link>
+                        </div>
+                        {/* https://www.instagram.com/anas_mongol/ */}
 
                     </div>
                     
