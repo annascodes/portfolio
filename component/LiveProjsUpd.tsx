@@ -1,8 +1,10 @@
 import React from 'react'
 import BasicIcons from './BasicIcons'
 import Link from 'next/link'
+import { LiveProjectsList } from '@/lib/hardData'
+import { div } from 'framer-motion/client'
 
-const LiveProjects = () => {
+const LiveProjsUpd = () => {
     const titles = [
         {
             name: 'Firma',
@@ -83,29 +85,24 @@ const LiveProjects = () => {
     ]
 
     return (
-        <div className='md:h-svh flex md:flex-row flex-col gap-2 md:gap-3  '>
-            <div className='md:w-1/3 w-full   flex flex-row justify-center items-center'>
-                <div className='md:flex hidden flex-col gap-5 items-center  md:w-sm mx-auto text-5xl   justify-center '>
-                    <BasicIcons label='live' className='animate-ping' />
+        <div className=' items-start justify-center  flex flex-col gap-5 p-2 md:p-0 border-0'>
+
+            <div className='flex items-center justify-center md:justify-start border-0 w-full gap-2'>
+                <div className='md:hidden '>
+                    <BasicIcons label='live' className='text-2xl animate-ping' />
                 </div>
+                <h1 className='text-5xl font-semibold  text-center m-2 md:text-start border-0 md:mx-auto'>Live Projects</h1>
             </div>
-            <div className='md:w-2/3 w-full  items-start justify-center  flex flex-col gap-5 p-2 md:p-0 border-0'>
-
-                <div className='flex items-center justify-center md:justify-start border-0 w-full gap-2'>
-                    <div className='md:hidden '>
-                        <BasicIcons label='live' className='text-2xl animate-ping' />
-                    </div>
-                    <h1 className='text-5xl font-semibold  text-center m-2 md:text-start border-0'>Live Projects</h1>
-                </div>
 
 
-                <div className='flex flex-col w-full gap-2 s'>
-                    {titles.map(t => {
-                        return (
+            <div className='flex flex-col items-center w-full gap-2 s'>
+                {LiveProjectsList.map(t => {
+                    return (
+                        <div className='flex md:flex-row flex-col  items-center gap-3 p-5 md:w-4xl border-0'>
+                            <img src={t.img} className='w-sm rounded-xl ' alt="" />
+
                             <div key={t.link} className='mb-2 border-0 w-full p-2'>
                                 <div className='flex items-center justify-between gap-2 '>
-
-
                                     <div className="tooltip tooltip-right">
                                         <div className="tooltip-content flex items-center gap-2 tooltip-right p-2">
                                             <BasicIcons label='live' className='text-xs animate-ping' />
@@ -130,17 +127,21 @@ const LiveProjects = () => {
 
                                 </div>
                                 <div className='ml-10'>
-                                    {t.details}
+                                    {t.details.map(d => (
+                                        <div key={d} className='flex items-center gap-2'>
+                                            <BasicIcons label='checkMark' className='text-yellow-400' />
+                                            <p>{d}</p>
+                                        </div>
+                                    ))}
                                 </div>
 
                             </div>
-                        )
-                    })}
-                </div>
+                        </div>
+                    )
+                })}
             </div>
-
         </div>
     )
 }
 
-export default LiveProjects
+export default LiveProjsUpd

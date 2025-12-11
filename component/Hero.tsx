@@ -1,20 +1,23 @@
 import React from 'react'
+import TextRotater from './TextRotater'
 
 const Hero = () => {
     return (
 
         <div className="flex md:flex-row flex-col items-center gap-2 md:gap-0 justify-center h-svh  ">
-            <div className="w-full md:w-1/3   flex items-center justify-center   mx-auto">
+            <div className="w-full md:w-1/3 flex-col border-0  flex items-center justify-center   mx-auto">
                 <div className="bg-stone-300 text-black p-10 rounded-r-full slide-in-top">
                     <h1 className="text-6xl font-thin animate-pulse  ">Hello!</h1>
                     <h1 className=" text-center tracking-widest">its me,</h1>
                 </div>
+                {/* <TextRotater/> */}
             </div>
             <div className="w-full md:w-2/3 flex flex-col items-start border-0  ">
                 <div className='flex items-center justify-start   mx-auto border-0 md:w-md'>
                     <h1 className=" text-9xl font-extrabold  ">Anas</h1>
                     <span className='text-yellow-300 animate-bounce text-9xl'>.</span>
                 </div>
+                
                 <p className='md:w-md md:p-0 px-9 text-sm tracking-wider mx-auto border-0'>
                     <span>  Full-stack developer </span>
                     <span className='text-yellow-300'>MERN</span>
@@ -23,6 +26,9 @@ const Hero = () => {
                     <br />
                     <span> Trying to make every project a little better than the last.</span>
                 </p>
+                <div className='md:w-md md:p-0 px-9 text-sm tracking-wider mt-0 mx-auto border-0'>
+                     <TextRotater/>
+                </div>
             </div>
         </div>
 

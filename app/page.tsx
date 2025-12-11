@@ -3,23 +3,40 @@ import Contact from "@/component/Contact";
 import ContactFormModal from "@/component/ContactFormModal";
 import Hero from "@/component/Hero";
 import LiveProjects from "@/component/LiveProjects";
+import LiveProjsDiv from "@/component/LiveProjsDiv";
+import LiveProjsUpd from "@/component/LiveProjsUpd";
 import RecentProjects from "@/component/RecentProjects";
+import TextRotater from "@/component/TextRotater";
 import Work from "@/component/Work";
 
 export default function Home() {
   return (
     <div>
 
+      {/* <div className=" mt-20 ">
+         <TextRotater />
+      </div> */}
+
       <div id="home">
         <Hero />
       </div>
+
+
+
+
+
+
+
 
       <div id="about" className="mt-36 h-20 border-0"></div>
       <About />
 
 
+
       <div id="liveProjects" className="mt-36 h-20 border-0"></div>
-      <LiveProjects />
+      {/* <LiveProjects /> */}
+      <LiveProjsUpd/>
+
 
 
 
@@ -31,6 +48,9 @@ export default function Home() {
       <div className="h-svh flex items-center justify-center">
         <ContactFormModal />
       </div>
+
+      {/* <LiveProjsDiv /> */}
+
 
     </div>
   );
