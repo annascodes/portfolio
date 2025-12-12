@@ -82,6 +82,8 @@ export const LiveProjectsList = [
         github: 'https://github.com/annascodes/NoteIt',
         img: "https://github.com/user-attachments/assets/8811d660-49fe-490d-aaa3-e9400edcc12e",
         details: [
+            'Authentication using JWT.',
+            'State management using redux toolkit and redux persist.',
             "Creating (Adding) new notes with a title and body.",
             "Reading (Viewing) a list of all notes and opening an individual note.",
             "Updating (Editing) the title or body of an existing note.",

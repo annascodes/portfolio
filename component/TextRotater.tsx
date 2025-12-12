@@ -19,8 +19,8 @@ const list1 = [
 const list2 = [
         "DESIGN",
         "SCALE",
-        'DEPLOY',
         "MAINTAIN",
+        'DEPLOY',
         "REPEAT",
         
     ]
@@ -49,7 +49,7 @@ export default function TextRotater({
                     transition={{ duration: 0.4 }}
                     className="  text-5xl font-bold flex justify-start border-0  "
                 >
-                    <span className="">
+                    <span className="text-yellow-300">
                         {words[index]}
                     </span>
                 </motion.span>

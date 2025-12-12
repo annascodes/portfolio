@@ -3,6 +3,7 @@ import BasicIcons from './BasicIcons'
 import Link from 'next/link'
 import { LiveProjectsList } from '@/lib/hardData'
 import { div } from 'framer-motion/client'
+import Image from 'next/image'
 
 const LiveProjsUpd = () => {
     const titles = [
@@ -98,10 +99,29 @@ const LiveProjsUpd = () => {
             <div className='flex flex-col items-center w-full gap-2 s'>
                 {LiveProjectsList.map(t => {
                     return (
-                        <div className='flex md:flex-row flex-col  items-center gap-3 p-5 md:w-4xl border-0'>
-                            <img src={t.img} className='w-sm rounded-xl ' alt="" />
+                        <div key={t.link} className='flex md:flex-row flex-col  items-center gap-3 p-5 md:w-4xl border-0'>
+                            {/* <img src={t.img} className='w-sm rounded-xl ' alt="" /> */}
+                            {/* <div className="relative w-lg h-48 ">
+                                <Image
+                                    src={t.img}
+                                    alt={t.name}
+                                    fill
+                                    className="rounded-xl"
+                                    quality={100}
+                                />
+                            </div> */}
 
-                            <div key={t.link} className='mb-2 border-0 w-full p-2'>
+                            <Image
+                                src={t.img}
+                                alt={t.name}
+                                width={400}
+                                height={300}
+                                className=' rounded-xl'
+                                unoptimized
+
+                            />
+
+                            <div className='mb-2 border-0 w-full p-2'>
                                 <div className='flex items-center justify-between gap-2 '>
                                     <div className="tooltip tooltip-right">
                                         <div className="tooltip-content flex items-center gap-2 tooltip-right p-2">

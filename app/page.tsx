@@ -2,6 +2,7 @@ import About from "@/component/About";
 import Contact from "@/component/Contact";
 import ContactFormModal from "@/component/ContactFormModal";
 import Hero from "@/component/Hero";
+import HeroUpd from "@/component/HeroUpd";
 import LiveProjects from "@/component/LiveProjects";
 import LiveProjsDiv from "@/component/LiveProjsDiv";
 import LiveProjsUpd from "@/component/LiveProjsUpd";
@@ -18,7 +19,8 @@ export default function Home() {
       </div> */}
 
       <div id="home">
-        <Hero />
+        {/* <Hero />  */}
+        <HeroUpd/>
       </div>
 
 

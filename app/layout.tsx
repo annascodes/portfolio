@@ -35,7 +35,9 @@ export default function RootLayout({
           <Navbar />
         </div>
 
-        {children}
+       <div className="mt-20">
+         {children}
+       </div>
       </body>
     </html>
   );
